@@ -19,12 +19,20 @@ with servicebus_client:
         # send one message        
         send_single_message(sender)
 
+        # Sending a list of messages
+        messages = [ServiceBusMessage("First message-list1"), ServiceBusMessage("Second message-list2")]
+        sender.send_messages(messages)
+
 print("Done sending messages")
 print("-----------------------")
 
 with servicebus_client:
-    receiver = servicebus_client.get_queue_receiver(queue_name=QUEUE_NAME, max_wait_time=5)
+    receiver = servicebus_client.get_queue_receiver(queue_name=QUEUE_NAME, max_wait_time=1, receive_mode="receiveanddelete")
     with receiver:
         for msg in receiver:
             print("Received: " + str(msg))
-            receiver.complete_message(msg)
+
+            """complete_message will delete the message
+            applicable for receive_mode="peeklock", since "receiveanddelete" will delete the message immediately.
+            """
+            #receiver.complete_message(msg)
