@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "myservicebusnamespacearuni_SERVICEBUS": "Endpoint=sb://myservicebusnamespacearuni.servicebus.windows.net/;SharedAccessKeyName=mypolicy;SharedAccessKey=ZD48OBvq1i1O4QC5aVyNnDZPFOjrfNk9UwkO2jdzC+c=;"
+  }
+}
