@@ -1,7 +1,7 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "",
+    "AzureWebJobsStorage": "BlobEndpoint=https://mystorageaccountaruni.blob.core.windows.net/;QueueEndpoint=https://mystorageaccountaruni.queue.core.windows.net/;FileEndpoint=https://mystorageaccountaruni.file.core.windows.net/;TableEndpoint=https://mystorageaccountaruni.table.core.windows.net/;SharedAccessSignature=sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2022-01-12T20:37:46Z&st=2022-01-12T12:37:46Z&spr=https&sig=SWlgLEWgN4WitrUZRehNwbhJ6LR1C5dY3Fin0wCZAH0%3D",
     "FUNCTIONS_WORKER_RUNTIME": "python"
   }
 }
