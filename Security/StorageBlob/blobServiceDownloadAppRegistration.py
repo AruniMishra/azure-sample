@@ -1,5 +1,5 @@
 import os, uuid
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
+from azure.storage.blob import BlobServiceClient, BlobClient, __version__
 from azure.identity import ClientSecretCredential
 
 tenant_id = '21cf2068-16a1-412e-8383-0ec993073e05'
