@@ -9,3 +9,4 @@
 ## Note
 
 add the role assignemtn in storage account
+[Reference](https://youtu.be/QdyHITN6cxY?t=4623)
