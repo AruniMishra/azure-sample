@@ -1,6 +1,7 @@
 # blobDownloadManagedIdentity.py
 
 - create linux VM, create .pem file in 'SSH keys'
+  - enable the System assigned identity 
 - install python and pip
 - touch blobDownloadManagedIdentity.py
 - copy the code
