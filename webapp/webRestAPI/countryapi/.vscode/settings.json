@@ -1,0 +1,5 @@
+{
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/d3382832-6b89-4c4e-9f02-4d4acca772d0/resourceGroups/my-rg/providers/Microsoft.Web/sites/my-web-app-aruni",
+    "appService.deploySubpath": "."
+}
