@@ -33,8 +33,13 @@ or via Portal
 run below cmd from django code folder
 >az webapp up --resource-group my-rg --location westeurope --plan DjangoPostgres-tutorial-plan --sku B1 --name djangoapparuni
 
-if we create Postgres server via the Posrtal the default Databse is postgres, so first login and create a new DB pollsdb
->az postgres server firewall-rule create --resource-group my-rg --server postgres-server-name --name AllowMyIP --start-ip-address 20.50.183.104 --end-ip-address 20.50.183.104
->psql --host=postgres-server-name.postgres.database.azure.com --port=5432 --username=mishra@postgres-server-name --dbname=postgres
 
-az webapp config appsettings set --settings DBHOST="postgres-server-name" DBUSER="mishra" DBPASS="passAwsd123!!" DBNAME="pollsdb"
+if we create Postgres server via the Posrtal the default Databse is postgres, so first login and create a new DB pollsdb
+
+>az postgres server firewall-rule create --resource-group my-rg --server postgres-server-name --name AllowMyIP --start-ip-address 213.127.57.171 --end-ip-address 213.127.57.171
+
+```bash
+psql --host=postgres-server-name.postgres.database.azure.com --port=5432 --username=mishra@postgres-server-name --dbname=postgres
+```
+
+az webapp config appsettings set --settings DBHOST="postgres-server-name" DBUSER="mishra" DBPASS="Consopage13!" DBNAME="pollsdb"
