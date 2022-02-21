@@ -1,7 +1,7 @@
 from azure.servicebus import ServiceBusClient, ServiceBusMessage
 
-CONNECTION_STR = "Endpoint=sb://myservicebusnamespacearuni.servicebus.windows.net/;SharedAccessKeyName=mypolicy;SharedAccessKey=s/yRH6yOad2YliG9DHe3+MUJIRnz/67OY811EZRYe8A=;EntityPath=myqueue"
-QUEUE_NAME = "myqueue"
+CONNECTION_STR = "Endpoint=sb://my-servicebus-namespace-aruni.servicebus.windows.net/;SharedAccessKeyName=mypolicy;SharedAccessKey=MHo2rDAEoZVoZJBSzP2BCWKxv5mS6X44YW+pt0scnl4=;EntityPath=my-queue"
+QUEUE_NAME = "my-queue"
 
 def send_single_message(sender):
     # create a Service Bus message
@@ -27,7 +27,7 @@ print("Done sending messages")
 print("-----------------------")
 
 with servicebus_client:
-    receiver = servicebus_client.get_queue_receiver(queue_name=QUEUE_NAME, max_wait_time=1, receive_mode="receiveanddelete")
+    receiver = servicebus_client.get_queue_receiver(queue_name=QUEUE_NAME, max_wait_time=1, receive_mode="peeklock")
     with receiver:
         for msg in receiver:
             print("Received: " + str(msg))
