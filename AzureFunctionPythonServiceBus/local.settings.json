@@ -3,6 +3,6 @@
   "Values": {
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "myservicebusnamespacearuni_SERVICEBUS": "Endpoint=sb://myservicebusnamespacearuni.servicebus.windows.net/;SharedAccessKeyName=mypolicy;SharedAccessKey=ZD48OBvq1i1O4QC5aVyNnDZPFOjrfNk9UwkO2jdzC+c=;"
+    "myservicebusnamespacearuni_SERVICEBUS": "Endpoint=sb://myservicebusnamespacearuni.servicebus.windows.net/;SharedAccessKeyName=mypolicy;SharedAccessKey=lMiRrO67s3neHJqv7hepy5jhYVvWajhz2GIuLQ/LHjo="
   }
 }
